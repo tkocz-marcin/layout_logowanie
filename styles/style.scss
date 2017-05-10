@@ -1,0 +1,240 @@
+@import 'variables';
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    min-height: 100vh;
+    margin: 0 0;
+    overflow-x: hidden;
+    background: $backgroundGray;
+    font-size: 1.6rem;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.register--container {
+    width: 86vw;
+    min-height: 80vh;
+    margin: 5vh auto 5vh;
+    background: #ffffff;
+    border: 2px solid $backgroundColor;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.35);
+}
+
+.register--header {
+    color: $decorationColor;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 2vh 0;
+    border-bottom: 1px solid $backgroundColor;
+}
+
+.register--benefits {
+    display: flex;
+    flex-wrap: no-wrap;
+    justify-content: space-around;
+    padding: 1vh 0;
+}
+
+.register--benefits-tile {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-items: center;
+    svg {
+        margin: 0 1vw;
+    }
+}
+
+.register--form {
+    background: $backgroundColor;
+    padding: 2vh 0vw;
+    text-align: center;
+}
+
+.register--input-container {
+    position: relative;
+    width: calc(280px + 4vw);
+    margin: 1vh auto 3vh;
+}
+
+.register--input {
+    width: 100%;
+    padding: 1.6vh 1vw;
+    border: 1px solid $inputBorderGray;
+    border-bottom: 1px solid $decorationColor;
+}
+
+.register--label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-150%, 50%);
+    color: $fontGrayColor;
+}
+
+.register--btn {
+    padding: 1.5vh 4vw;
+    margin-bottom: 3vh;
+    text-align: center;
+    background: $decorationColor;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    transition: transform .5s $cubic;
+    transform: scale(0.9);
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.registry--login {
+    color: $decorationColor;
+    text-decoration: none;
+}
+
+.register--row--name {
+    color: $lightGray;
+}
+
+.register--row {
+    display: flex;
+    width: 100%;
+    flex-wrap: no-wrap;
+    text-decoration: none;
+    list-style: none;
+    justify-content: space-between;
+    padding: 1vh 3vw;
+    align-items: center;
+}
+
+.register--row-border {
+    border-top: 1px solid $backgroundColor;
+    border-bottom: 1px solid $backgroundColor;
+}
+
+.star {
+    img {
+        width: 100px;
+        &:hover {
+            box-shadow: 0px 3px 10px -4px #000;
+        }
+    }
+}
+
+.media {
+    filter: grayscale(100%);
+    transition: filter .8s;
+    &:hover {
+        filter: grayscale(0%);
+    }
+}
+
+.brand {
+    opacity: 0.5;
+    transition: opacity .8s;
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.register--row--name {
+    width: calc(100px + 2vw);
+    text-align: right;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.text {
+    color: $fontGrayColor;
+}
+
+.text-bold {
+    font-weight: 700;
+}
+
+.cls-3 {
+    fill: #ffffff;
+    fill-opacity: 0;
+}
+
+.cls-4 {
+    fill: #30306d;
+}
+
+@media screen and (max-width: 480px) {
+    .register--benefits {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 1vh 0;
+    }
+    .register--form {
+        padding: 5vh 0vw;
+        text-align: center;
+    }
+    .register--input-container {
+        position: static;
+        width: calc(260px + 2vw);
+        margin: 1vh auto 3vh;
+    }
+    .register--input {
+        width: 100%;
+        padding: 1.6vh 1vw;
+        border: 1px solid $inputBorderGray;
+        border-bottom: 1px solid $decorationColor;
+    }
+    .register--label {
+        position: static;
+        left: 0;
+        top: 0;
+        transform: translate(-150%, 50%);
+        color: $fontGrayColor;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .register--row--name {
+        width: 100%;
+        text-align: center;
+    }
+    .register--row {
+        flex-wrap: wrap;
+    }
+    .brand,
+    .star,
+    .media {
+        padding: 0 2vw;
+    }
+    .register--benefits-tile {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .star {
+        img {
+            width: calc(40px + 4.5vw);
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .register--container {
+        width: 96vw;
+    }
+}

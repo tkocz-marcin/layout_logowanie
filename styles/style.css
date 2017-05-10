@@ -1,0 +1,258 @@
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  min-height: 100vh;
+  margin: 0 0;
+  overflow-x: hidden;
+  background: #7f7f7f;
+  font-size: 1.6rem; }
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box; }
+
+.register--container {
+  width: 86vw;
+  min-height: 80vh;
+  margin: 5vh auto 5vh;
+  background: #ffffff;
+  border: 2px solid #ebd5b5;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.35); }
+
+.register--header {
+  color: #30306d;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 2vh 0;
+  border-bottom: 1px solid #ebd5b5; }
+
+.register--benefits {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: no-wrap;
+      -ms-flex-wrap: no-wrap;
+          flex-wrap: no-wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  padding: 1vh 0; }
+
+.register--benefits-tile {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: no-wrap;
+      -ms-flex-wrap: no-wrap;
+          flex-wrap: no-wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .register--benefits-tile svg {
+    margin: 0 1vw; }
+
+.register--form {
+  background: #ebd5b5;
+  padding: 2vh 0vw;
+  text-align: center; }
+
+.register--input-container {
+  position: relative;
+  width: calc(280px + 4vw);
+  margin: 1vh auto 3vh; }
+
+.register--input {
+  width: 100%;
+  padding: 1.6vh 1vw;
+  border: 1px solid #b9b9b9;
+  border-bottom: 1px solid #30306d; }
+
+.register--label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transform: translate(-150%, 50%);
+      -ms-transform: translate(-150%, 50%);
+          transform: translate(-150%, 50%);
+  color: #323232; }
+
+.register--btn {
+  padding: 1.5vh 4vw;
+  margin-bottom: 3vh;
+  text-align: center;
+  background: #30306d;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.17, 0.67, 0.42, 1.4);
+          transition: transform 0.5s cubic-bezier(0.17, 0.67, 0.42, 1.4);
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9); }
+  .register--btn:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1); }
+
+.registry--login {
+  color: #30306d;
+  text-decoration: none; }
+
+.register--row--name {
+  color: #adadad; }
+
+.register--row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-flex-wrap: no-wrap;
+      -ms-flex-wrap: no-wrap;
+          flex-wrap: no-wrap;
+  text-decoration: none;
+  list-style: none;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1vh 3vw;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.register--row-border {
+  border-top: 1px solid #ebd5b5;
+  border-bottom: 1px solid #ebd5b5; }
+
+.star img {
+  width: 100px; }
+  .star img:hover {
+    box-shadow: 0px 3px 10px -4px #000; }
+
+.media {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: -webkit-filter .8s, filter .8s;
+          transition: filter .8s; }
+  .media:hover {
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%); }
+
+.brand {
+  opacity: 0.5;
+  -webkit-transition: opacity .8s;
+          transition: opacity .8s; }
+  .brand:hover {
+    opacity: 1; }
+
+.register--row--name {
+  width: calc(100px + 2vw);
+  text-align: right; }
+
+.btn {
+  cursor: pointer; }
+
+.text {
+  color: #323232; }
+
+.text-bold {
+  font-weight: 700; }
+
+.cls-3 {
+  fill: #ffffff;
+  fill-opacity: 0; }
+
+.cls-4 {
+  fill: #30306d; }
+
+@media screen and (max-width: 480px) {
+  .register--benefits {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    padding: 1vh 0; }
+
+  .register--form {
+    padding: 5vh 0vw;
+    text-align: center; }
+
+  .register--input-container {
+    position: static;
+    width: calc(260px + 2vw);
+    margin: 1vh auto 3vh; }
+
+  .register--input {
+    width: 100%;
+    padding: 1.6vh 1vw;
+    border: 1px solid #b9b9b9;
+    border-bottom: 1px solid #30306d; }
+
+  .register--label {
+    position: static;
+    left: 0;
+    top: 0;
+    -webkit-transform: translate(-150%, 50%);
+        -ms-transform: translate(-150%, 50%);
+            transform: translate(-150%, 50%);
+    color: #323232; } }
+@media screen and (max-width: 800px) {
+  .register--row--name {
+    width: 100%;
+    text-align: center; }
+
+  .register--row {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+
+  .brand,
+  .star,
+  .media {
+    padding: 0 2vw; }
+
+  .register--benefits-tile {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+@media screen and (max-width: 1080px) {
+  .star img {
+    width: calc(40px + 4.5vw); } }
+@media screen and (max-width: 1200px) {
+  .register--container {
+    width: 96vw; } }
+
+/*# sourceMappingURL=style.css.map */
